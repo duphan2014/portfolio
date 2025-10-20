@@ -1,0 +1,39 @@
+.grid-container {
+  display: grid;
+  /*grid: 100px / auto auto auto;*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.header {
+  grid-area: 1 / 1 / span 1 / span 8;
+}
+
+.navigation-header {
+  grid-area: 2 / 1 / span 1 / span 8;
+}
+
+.navigation-left {
+  grid-area: 3 / 1 / span 1/ span 1;
+}
+
+.content {
+  grid-area: 3 / 2 / span 1 / span 7;
+}
+
+.footer {
+  grid-area: 4 / 1 / span 1 / span 8;
+}
+
+
+
+
+

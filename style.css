@@ -1,0 +1,128 @@
+.grid-container {
+  display: grid;
+  /*grid: 100px / auto auto auto;*/
+  /* grid-gap: 2px;
+  padding: 2px;*/
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14;
+}
+
+.header {
+  grid-area: 1 / 1 / span 1 / span 8;
+  background-color: #0a1633;
+  color: #fff;
+  font-family: pt_sans_regular, Trebuchet MS, Arial Narrow, sans-serif;
+  letter-spacing: 2px;
+}
+
+.header-top-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0a1633;
+  color: #fff;
+}
+
+#header-logo {
+  font-size: 38;
+  font-weight: 400;
+
+}
+
+#header-slogan {
+  font-family: pt_sans_regular, Trebuchet MS, Arial Narrow, sans-serif;
+  text-transform: uppercase;
+}
+
+.header-top-bar div {
+  margin: 0px 10px;
+}
+
+.navigation-tool-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-tool-bar > .left,
+.navigation-tool-bar > .right {
+  margin: 0px 10px;
+}
+
+.navigation-tool-bar .left div,
+.navigation-tool-bar .right div {
+  margin: 0;
+  display: inline-block;
+}
+
+.navigation-tool-bar .left div {
+  margin-right: 15px;
+}
+
+.navigation-tool-bar #subscribe-button {
+  background-color: #096dd2;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 10px 16px 9px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: pt_sans_regular, Trebuchet MS, Arial Narrow, sans-serif;
+}
+
+.navigation-header {
+  background-color: #0a1633;
+  color: #fff;
+  grid-area: 2 / 1 / span 1 / span 8;
+  cursor: pointer;
+  position: relative;
+  font-family: PT Sans,system-fonts-primary,sans-serif;
+}
+
+.navigation-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 20%);
+  clip-path: polygon(0 0, 10px 100%, calc(100% - 10px) 100%, 100% 0);
+}
+
+#navigation-header-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 16;
+  letter-spacing: 2px;
+}
+
+#navigation-header-menu li {
+  padding-inline: 10px;
+}
+
+
+.navigation-left {
+  grid-area: 3 / 1 / span 1/ span 1;
+}
+
+.content {
+  grid-area: 3 / 2 / span 1 / span 7;
+}
+
+.footer {
+  grid-area: 4 / 1 / span 1 / span 8;
+}
+
+
+
+
+
