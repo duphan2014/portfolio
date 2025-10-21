@@ -1,5 +1,6 @@
 <head>
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 <div class="grid-container">
@@ -16,14 +17,55 @@
     </div>
     <div class="navigation-tool-bar">
       <div class="navigation-tool-bar left">
-        <div id="menu">Menu</div>
-        <div id="search">Search</div>
+        <div id="hamburger-menu" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="search"></div>
       </div>
       <div class="navigation-tool-bar right">
         <div id="subscribe-button"><a>Subscribe</a></div>
       </div>
     </div>
   </div>
+  
+  <!-- Flyout Navigation Menu -->
+  <div id="flyout-menu" class="flyout-menu">
+    <div class="flyout-header">
+      <button id="close-menu" class="close-btn">&times;</button>
+      <div><input id="flyout-header-search" type="text" value="Search"></input></div>
+    </div>
+    <ul class="flyout-nav-list">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#melbourne">Melbourne</a></li>
+      <li><a href="#Victoria">Victoria</a></li>
+      <li><a href="#politics">Politics</a></li>
+      <li><a href="#business">Business</a></li>
+      <li><a href="#world">World</a></li>
+      <li><a href="#National">National</a></li>
+      <li><a href="#Opinion">Opinion</a></li>
+      <li><a href="#Property">Property</a></li>
+      <li><a href="#Sport">Sport</a></li>
+      <li><a href="#good-food">Good Food</a></li>
+      <li><a href="#Culture">Culture</a></li>
+      <li><a href="#lifestyle">LifeStyle</a></li>
+      <li><a href="#traveller">Traveller</a></li>
+      <li><a href="#Good Weekend">Good Weekend</a></li>
+      <li><a href="#Spectrum">Spectrum</a></li>
+      <li><a href="#Sunday Life">Sunday Life</a></li>
+      <li><a href="#Money">Money</a></li>
+      <li><a href="#Education">Education</a></li>
+      <li><a href="#Healthcare">Healthcare</a></li>
+      <li><a href="#Environment">Environment</a></li>
+      <li><a href="#Technology">Technology</a></li>
+      <li><a href="#Drive">Drive</a></li>
+    </ul>
+  </div>
+  
+  <!-- Overlay -->
+  <div id="overlay" class="overlay"></div>
+  
   <div class="navigation-header">
     <ul id="navigation-header-menu">
       <li>Melbourne</li>
